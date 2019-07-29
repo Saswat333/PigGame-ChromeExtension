@@ -1,0 +1,32 @@
+GAME RULES:
+
+- The game has 2 players, playing in rounds.
+- There will be two dices.
+- In each turn, a player rolls two dices as many times as he whishes. Each result get added to his CURRENT ROUND  score. 
+- BUT, if the player rolls a double 1, all his CURRENT ROUND  score gets lost. After that, it's the next player's turn.
+- Similarly, if the player rolls a double 6, all his OVERALL score gets lost. After that, it's the next player's turn
+- The player can choose to 'Hold', which means that his CURRENT ROUND score gets added to his OVERALL score. After that, it's the next player's turn
+- The players can set a FINAL SCORE as WINNING score before starting the game. The first player to reach the WINNING score will be declared as WINNER OF THE GAME.
+- But, if you don't put the WINNING SCORE before starting the game then, the winning score will be set to 100 by default.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Description:
+
+Play this amazing Pig Game for free !!!
+
+Pig Game is based on the popular 'Ludo' game. But with more fun.
+It is practically a very simple game, if you have luck you win.
+
+The main goal of the game is to reach the Winning Score, which you can set at the beginning of the game. The game is based on two players. Where each player gets a turn to roll the dice. Player can keep rolling the dice until they feel 'Holding' the score. When they hold the score it is added to your current round score. 
+Why holding a value ??
+Yes, you need to hold you value because, if the dice rolls 1,1 you lose your current round score. And the dice is passed to the other player. The worst is when you roll 6,6 because, you lose the entire score which you have saved till now.
+When you roll dice and hold the value the dice is passed to your opponent.
+The first person to reach the winning score wins.
+
+You can check the game rule by clicking the 'RULES' button
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+UP COMING FEATURE:
+1. Multiplayer
+2. Toss button
+3. Tab for displaying about
+4. Upcoming new features tab
