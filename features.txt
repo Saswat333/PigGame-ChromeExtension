@@ -2,9 +2,19 @@ NEW FEATURES
 ==================================
 UPCOMING
 ----------------
+- About icon
+
+
+
 
 PLANNED
 ----------------
+- Adding sound effect on dice-roll
+- Multi-player feature
+- Toss
 
-IDEA's
+
+
+BUG FIXES
 ----------------
+- Rule panel screen overlap
