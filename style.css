@@ -182,7 +182,7 @@ i {
   transform: translateX(-50%);
   top: 110px;
   color: #555;
-  font-size: 12px;
+  font-size: 11px;
   font-family: "Lato";
   text-align: center;
   padding: 10px;
@@ -219,8 +219,8 @@ i {
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
+  padding: 15px;
+  border: 5px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
@@ -228,7 +228,7 @@ i {
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
 }
 

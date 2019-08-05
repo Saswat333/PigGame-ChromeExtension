@@ -1,0 +1,23 @@
+RELEASE NOTE:
+
+v0.0.5
+- Bug fixes: 
+   * Winning Score now shows "winning score" text when there is no input value at beginning of game.
+   * Default value 200 and locked screen displays 200 value.
+- Improved css of winning score panel.
+- Improved "Rules panel", with changes to messages.
+
+
+v0.0.4
+- Bug fixes:
+   * Resizing of browser window breaked the main panel, is fixed.
+
+v0.0.3
+- Bug fixes:
+  * Rule panel overlayed on background screen, is not fixed.
+
+v0.0.2
+- Added few images and packages of bootstrap and jquery.
+
+v0.0.1
+- Initial release.

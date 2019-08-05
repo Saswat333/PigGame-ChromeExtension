@@ -15,7 +15,7 @@ var globalScore,
   winningScore,
   inputScore;
 
-//chrome extension code
+//chrome extension code(comment this section of code for browser testing & development)
 
 chrome.browserAction.onClicked.addListener(function(tab) {
   chrome.tabs.create({
@@ -23,25 +23,27 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     selected: true
   });
 });
+
 //intialise all the above parameter values
 init();
 
 /****** ROLL BUTTON FUNCTION ******/
 document.querySelector(".btn-roll").addEventListener("click", function() {
   if (gamePlaying) {
+    //check input value condition to display in placeholder before locking
+    var finScore = document.getElementById("final-score-1");
+    if (finScore.value == "") {
+      finScore.value = "200";
+    }
     //disable the finalscore placeholder
     document.getElementById("final-score-1").disabled = true;
     //1. generate random number
     var diceValue1 = Math.floor(Math.random() * 6) + 1;
     var diceValue2 = Math.floor(Math.random() * 6) + 1;
-    /*
-     console.log(diceValue1);
-     console.log(diceValue2);
-    */
+
     //2. Display the disk block and result in DICE image
     document.getElementById("dice-1").style.display = "block";
     document.getElementById("dice-2").style.display = "block";
-
     document.getElementById("dice-1").src = "dice-" + diceValue1 + ".png";
     document.getElementById("dice-2").src = "dice-" + diceValue2 + ".png";
 
@@ -60,8 +62,6 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
         "#current-" + activePlayer
       ).textContent = roundScore;
     }
-
-    //4. reset the score if
   }
 });
 
@@ -113,7 +113,10 @@ function nextPlayer() {
 }
 
 /****** NEW BUTTON FUNCTION ******/
-document.querySelector(".btn-new").addEventListener("click", init);
+document.querySelector(".btn-new").addEventListener("click", function() {
+  init();
+  document.getElementById("final-score-1").value = "";
+});
 
 /****** RULES BUTTON FUNCTION **/
 var modal = document.getElementById("myModal");
@@ -138,8 +141,9 @@ function init() {
   gamePlaying = true;
 
   document.getElementById("final-score-1").disabled = false;
-  var finScore = document.getElementById("final-score-1");
-  finScore.value = "200";
+  // var finScore = document.getElementById("final-score-1");
+  //var finValue = document.getElementById("final-score-1").value();
+
   //hiding the dice block at the start of game
   document.getElementById("dice-1").style.display = "none";
   document.getElementById("dice-2").style.display = "none";
@@ -161,11 +165,10 @@ function init() {
   document.querySelector(".player-0-panel").classList.add("active");
 }
 
+//not usable now , as the default value 200 is locked and "inputScore" will never be empty
 function checkFinalScore() {
   //Undefined, null, 0, "", negative value are all COERED to false, anyother value coered to true
   if (inputScore > 0) {
     winningScore = inputScore;
-  } else {
-    winningScore = 60;
   }
 }

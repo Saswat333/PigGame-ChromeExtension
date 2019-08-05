@@ -1,20 +1,24 @@
-NEW FEATURES
+NEW FEATURES AND BUGS
 ==================================
 UPCOMING
 ----------------
 - About icon
-
+- Adding sound effect on dice-roll
+- Toss option 
 
 
 
 PLANNED
 ----------------
-- Adding sound effect on dice-roll
+MINOR:
+
+
+MAJOR:
 - Multi-player feature
-- Toss
+
 
 
 
 BUG FIXES
 ----------------
-- Rule panel screen overlap
+- Rule panel screen overlap : fixed

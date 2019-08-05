@@ -1,7 +1,7 @@
 {
   "name": "Pig Game",
   "description": "Ludo game for two players. How lucky you are...?",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "manifest_version": 2,
   "icons": { "19": "piggame19.png", "128": "piggame128.png" },
   "browser_action": {

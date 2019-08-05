@@ -43,29 +43,37 @@
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
             <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
-            <input type="number" min='0' id="final-score-1" placeholder="Final score" class="final-score">
+            <input type="number" min='0' id="final-score-1" placeholder="Winning score" class="final-score">
             <!-- Dice image -->
             <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
             <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
             
            <!-- Rule button (removed target button function)-->
            
-           <button class="btn-rule" type ="button" data-toggle="collapse" data-target=""><i class="icon ion-gear-b"></i>RULES</button>
+           <button class="btn-rule" type ="button" data-toggle="modal" data-target=""><i class="icon ion-gear-b"></i>RULES</button>
            <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>
-                <ul>
+                <div class="modal-header">
+                        <h4 class="modal-title">RULES</h4>
+                </div>
+                 <div class="modal-body">
+                <p>
+                    <ul>
                     <li>The game has 2 players, playing in rounds</li>
                     <li >In each turn, a player rolls a dice as many times as he whishes. Each result get added to his CURRENT ROUND score.</li>
                     <li>BUT, if the player rolls a 1, all his CURRENT ROUND score gets lost. After that, it's the next player's turn.</li>
                     <li>The player can choose to 'Hold', which means that his CURRENT ROUND score gets added to his OVERALL SCORE. After that, it's the next player's turn.</li>
                     <li>If any player gets two consecutive 6, then the OVERALL SCORE will be reset to 0.</li>
-                    <li>The first player to reach 100 points on OVERALL SCORE wins the game.</li>
-                    <li>If the player doesnt enter valid final score i.e. any negative value then the OVERALL SCORE will be set to 100 by default.</li>
+                    <li>If your OVERALL SCORE reaches the WINNING SCORE, then you win !!</li>
+                    <li>If the player doesnt enter valid final score i.e. any negative value or no value, then the OVERALL SCORE will be set to 200 by default.</li>
                   </ul>
-              </p>
+                  <p style="text-align: center; color: blue; font-size:larger "><b>Bigger the Score, More fun it is...</b></p>
+                </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+                </div>
             </div>
           </div>
         </div>
